@@ -25,19 +25,64 @@
     <p id="description">This is a survey form for the project</p>
     <form id="survey-form">
       <label for="name" id="name-label">Name:</label>
-      <input type="text" id="name" required placeholder="Please write your name" />
+      <input
+        type="text"
+        id="name"
+        required
+        placeholder="Please write your name"
+      />
 
       <label for="email" id="email-label">Email:</label>
       <input type="email" id="email" placeholder="E-mail" required />
 
       <label for="number" id="number-label">Age</label>
-      <input type="number" name="number" min="3" max="100" id="number" placeholder="Age" required/>
+      <input
+        type="number"
+        name="number"
+        min="3"
+        max="100"
+        id="number"
+        placeholder="Age"
+        required
+      />
 
+      <br />
+      <h3>
+        Please select from following option:
+      </h3>
       <select name="drop" id="dropdown">
-      	<option>Opt1</option>
-      	<option>Opt2</option>
-      	<option>Opt3</option>
-      </select><br>
+        <option>Opt1</option>
+        <option>Opt2</option>
+        <option>Opt3</option> </select
+      ><br />
+
+      <br />
+
+      <fieldset>
+        <input type="radio" name="radio-option" value="radio1" /> radio1
+        <input type="radio" name="radio-option" value="radio2" /> radio2
+        <input type="radio" name="radio-option" value="radio3" /> radio3
+        <input type="radio" name="radio-option" value="radio4" /> radio4
+      </fieldset>
+
+      <ul>
+        <li><input type="checkbox" name="check-box" value="check1" />check1</li>
+        <li><input type="checkbox" name="check-box" value="check2" />check2</li>
+        <li><input type="checkbox" name="check-box" value="check3" />check3</li>
+      </ul>
+
+      <br />
+
+      <textarea
+        name="comment"
+        id="comment"
+        cols="30"
+        rows="10"
+        placeholder="Please put your comment here ... "
+      ></textarea>
+      <br />
+
+      <input type="submit" name="submit" id="submit" />
     </form>
 
     <script src="js/index.js"></script>
