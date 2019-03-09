@@ -24,13 +24,20 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">This is a survey form for the project</p>
     <form id="survey-form">
-      <label for="name-label">Name:</label>
-      <input type="text" id="name" required />
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" required placeholder="Please write your name" />
 
-      <label for="email-label">Email:</label>
-      <input type="email" id="email" required />
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="E-mail" required />
 
-      <input type="number" name="number" id="number" />
+      <label for="number" id="number-label">Age</label>
+      <input type="number" name="number" min="3" max="100" id="number" placeholder="Age" required/>
+
+      <select name="drop" id="dropdown">
+      	<option>Opt1</option>
+      	<option>Opt2</option>
+      	<option>Opt3</option>
+      </select><br>
     </form>
 
     <script src="js/index.js"></script>
