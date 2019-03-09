@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -24,8 +24,15 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">This is a survey form for the project</p>
     <form id="survey-form">
-    	<input type="text" id="name"required>
+      <label for="name-label">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email-label">Email:</label>
+      <input type="email" id="email" required />
+
+      <input type="number" name="number" id="number" />
     </form>
-    <script  src="js/index.js"></script>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
